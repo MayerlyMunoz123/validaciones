@@ -1,0 +1,57 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <legend>Datos Personales</legend>
+    <div class="p-grid">
+      <div class="p-col-12 p-md-6">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-id-card"></i>
+          </span>
+          <input type="text" pInputText placeholder="Cédula" formControlName="cedula">
+        </div>
+      </div>
+      <div class="p-col-12 p-md-6">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+          </span>
+          <input type="text" pInputText placeholder="Nombre" formControlName="nombre">
+        </div>
+      </div>
+      <div class="p-col-12 p-md-6">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+          </span>
+          <input type="text" pInputText placeholder="Apellido" formControlName="apellido">
+        </div>
+      </div>
+      <div class="p-col-12 p-md-6">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-home"></i>
+          </span>
+          <input type="text" pInputText placeholder="Dirección" formControlName="direccion">
+        </div>
+      </div>
+      <div class="p-col-12">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-envelope"></i>
+          </span>
+          <input type="email" pInputText placeholder="Email" formControlName="email">
+        </div>
+      </div>
+      <div class="p-col-12">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-phone"></i>
+          </span>
+          <input type="tel" pInputText placeholder="Número de Teléfono" formControlName="numeroDeTelefono">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <button type="submit" pButton label="Guardar"></button>
+</form>
